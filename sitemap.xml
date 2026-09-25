@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Page -->
+  <url>
+    <loc>https://araviiii.github.io/tnfa-test/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://araviiii.github.io/tnfa-test/"/>
+    <image:image>
+      <image:loc>https://araviiii.github.io/tnfa-test/images/founder.png</image:loc>
+      <image:title>Aravinth - Founder of TN Freelancer Academy</image:title>
+      <image:caption>Aravinth, Founder and Digital Marketing Strategist at TN Freelancer Academy, Tamil Nadu</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Section anchors (AEO — helps AI understand page structure) -->
+  <url>
+    <loc>https://araviiii.github.io/tnfa-test/#about</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://araviiii.github.io/tnfa-test/#services</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://araviiii.github.io/tnfa-test/#founder</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://araviiii.github.io/tnfa-test/#faq</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://araviiii.github.io/tnfa-test/#contact</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
