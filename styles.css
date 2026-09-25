@@ -1408,6 +1408,83 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+.contact-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1100px;
+}
+
+/* WhatsApp card special accent */
+.contact-card-whatsapp {
+  border-color: rgba(37, 211, 102, 0.3) !important;
+  background: rgba(37, 211, 102, 0.06) !important;
+}
+
+.contact-card-whatsapp:hover {
+  border-color: rgba(37, 211, 102, 0.6) !important;
+  background: rgba(37, 211, 102, 0.12) !important;
+  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.2) !important;
+}
+
+.contact-card-whatsapp a {
+  color: #25d366 !important;
+  font-weight: 600;
+}
+
+.contact-card-whatsapp a:hover {
+  color: #1ebe5d !important;
+}
+
+/* ===== FLOATING WHATSAPP BUTTON ===== */
+@keyframes whatsapp-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: var(--white);
+  padding: 14px 20px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 999;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: var(--transition-base);
+  animation: whatsapp-pulse 2.5s infinite;
+  max-width: 56px;
+  overflow: hidden;
+}
+
+.whatsapp-float-label {
+  white-space: nowrap;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-width 0.4s ease;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe5d;
+  max-width: 240px;
+  padding: 14px 22px;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float:hover .whatsapp-float-label {
+  opacity: 1;
+  max-width: 140px;
+}
+
 .contact-card {
   background: rgba(255,255,255,0.04);
   backdrop-filter: blur(10px);
@@ -1713,6 +1790,17 @@ h1, h2, h3, h4, h5, h6 {
   .contact-grid {
     grid-template-columns: 1fr;
     max-width: 400px;
+  }
+
+  .contact-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+  }
+
+  .whatsapp-float {
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 16px;
   }
   
   .footer-grid {
